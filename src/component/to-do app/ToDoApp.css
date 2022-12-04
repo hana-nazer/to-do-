@@ -67,3 +67,11 @@ ul li i {
     flex: 1;
     cursor: pointer;
 }
+
+ul li input {
+    text-align: left;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    /* cursor: pointer;/ */
+}

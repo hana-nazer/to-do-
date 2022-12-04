@@ -3,7 +3,8 @@ import "./ToDoApp.css";
 export class ToDoApp extends Component {
     state = {
         input: "",
-        items :[]
+        items :[],
+        completed:false
     };
     handleChange = event => {
         this.setState({
@@ -42,7 +43,7 @@ export class ToDoApp extends Component {
                 </form>
                 <ul>
                    {items.map((data,index)=>(
-                    <li key={index}>{data}<i className="fa-solid fa-xmark" onClick={()=>this.deleteItem(index)}></i></li>
+                    <li key={index}><input type="checkbox"></input>&nbsp;{data}<i className="fa-solid fa-xmark" onClick={()=>this.deleteItem(index)}></i></li>
                    ))}
 
                 </ul>
