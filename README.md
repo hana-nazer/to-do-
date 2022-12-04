@@ -3,5 +3,5 @@
 
 
 
-The aim of this project is to develop a to-do app
+The aim of this project is to develop a  basic to-do app
 
