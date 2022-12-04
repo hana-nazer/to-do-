@@ -38,11 +38,11 @@ export class ToDoApp extends Component {
             <div className='todo-container'>
                 <form className='input-section' onSubmit={this.storeItems}>
                     <h1>Todo App</h1>
-                    <input type="text" value={input} placeholder='enter items....' onChange={this.handleChange}></input>
+                    <input type="text" value={input} placeholder='Enter Items....' onChange={this.handleChange}></input>
                 </form>
                 <ul>
                    {items.map((data,index)=>(
-                    <li key={index}>{data}<i className="fa-regular fa-trash" onClick={()=>this.deleteItem(index)}></i></li>
+                    <li key={index}>{data}<i className="fa-solid fa-xmark" onClick={()=>this.deleteItem(index)}></i></li>
                    ))}
 
                 </ul>
